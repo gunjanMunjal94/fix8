@@ -80,6 +80,8 @@ void SessionID::make_id()
 //-------------------------------------------------------------------------------------------------
 SessionID SessionID::make_reverse_id() const
 {
+  int i;
+  int * j = new int();
 	return SessionID(_beginString(), _targetCompID(), _senderCompID());
 }
 
